@@ -2,9 +2,14 @@ $(function(){
     $(".change-devoured").on("click", function(event){
         let id= $(this).data("id");
         let newDevour = $(this).data("newdevoured");
-
+        let devourValue;
+        if (newDevour === 1){
+            devourValue = 0;
+        } else if(newDevour === 0){
+            devourValue = 1
+        }
         let newDevourState = {
-            devoured: newDevour
+            devoured: devourValue
         };
 
         $.ajax("/api/burgers" + id, {
