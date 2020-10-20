@@ -12,13 +12,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // set handlebars
-const exphbs = require("express-handlebars");
+let exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 // import routes and give the server access to them
-const routes = require("./controllers/burger_controller.js");
+let routes = require("./controllers/burger_controller.js");
 
 app.use(routes);
 
