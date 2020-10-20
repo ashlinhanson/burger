@@ -1,0 +1,19 @@
+h1, h2 {
+    font-family: "Jua";
+    text-align: center;
+    font-size: 64;
+}
+
+ul, li {
+    text-align: center;
+    font-family: "Do Hyeon";
+}
+
+button {
+    font-family: "Do Hyeon"
+}
+
+form {
+    font-family: "Do Hyeon";
+    text-align: center;
+}
