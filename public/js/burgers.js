@@ -8,13 +8,13 @@ $(function(){
         } else if(newDevour === 0){
             devourValue = 1
         }
-        let newDevourState = {
+        let newDevourChange = {
             devoured: devourValue
         };
 
         $.ajax("/api/burgers" + id, {
             type: "PUT",
-            data: newDevourState
+            data: newDevourChange
         }).then(
             function(){
                 console.log("changed devoured to" + newDevour);
