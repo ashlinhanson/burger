@@ -1,11 +1,9 @@
-h1, h2 {
+.jumbotron {
     font-family: "Jua";
-    text-align: center;
     font-size: 64;
 }
 
 ul, li {
-    text-align: center;
     font-family: "Do Hyeon";
 }
 
@@ -15,5 +13,4 @@ button {
 
 form {
     font-family: "Do Hyeon";
-    text-align: center;
 }
