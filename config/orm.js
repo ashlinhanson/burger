@@ -13,7 +13,7 @@ function printQuestionMarks(num) {
 function objToSql(ob){
     let arr= [];
 
-    for (var key in ob){
+    for (let key in ob){
         let value = ob[key];
 
         if(Object.hasOwnProperty.call(ob, key)){
@@ -21,7 +21,7 @@ function objToSql(ob){
                 value = "'" + value + "'";
             }
 
-            arr.push(key + "=" + value);
+            arr.push(key + " = " + value);
         }
     }
 

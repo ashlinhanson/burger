@@ -1,4 +1,4 @@
-INSERT INTO burgers (burger_name) VALUES ("Plain Jane");
-INSERT INTO burgers (burger_name) VALUES ("Double or Nothin'");
-INSERT INTO burgers (burger_name) VALUES ("Turkey Trot");
-INSERT INTO burgers (burger_name) VALUES ("Impossible ");
+INSERT INTO burgers (burger_name, devoured) VALUES ("Plain Jane", "0");
+INSERT INTO burgers (burger_name, devoured) VALUES ("Double or Nothin'", "0");
+INSERT INTO burgers (burger_name, devoured) VALUES ("Turkey Trot", "0");
+INSERT INTO burgers (burger_name, devoured) VALUES ("Impossible ", "0");
