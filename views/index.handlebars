@@ -1,20 +1,20 @@
 <div class="jumbotron jumbotron-fluid" style="background-color: #39A386">
     <div class="container">
-        <h1 class="display-4 text-center">Eat Dat Burger</h1>
+        <h1 class="display-4 text-center">Time to Eat Dat Burger</h1>
         <img src="/assets/img/burger.png" alt="burgerIcon" class="mx-auto d-block">
     </div>
 </div>
 <div class="container col-12 sm">
     <div class="row">
         <div class="card col-5 m-5 p-5 sm">
-    <h2 class="h2Head">Here are the options</h2>
+    <h2 class="h2Head">Da Burgs</h2>
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
                     {{burger_name}}
                     <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-                        DEVOUR ME!
+                        NOM NOM!
                     </button>
                 </li>
                 {{/unless}}
@@ -22,7 +22,7 @@
             </ul>
             </div>
             <div class="card col-5 m-5 p-5 sm">
-                <h2 class="h2Head">Burgers You've Devoured</h2>
+                <h2 class="h2Head">Burgs You've Devoured</h2>
 
                 <ul>
                     {{#each burgers}}
@@ -41,21 +41,21 @@
         </div>
     </div>
 <div class="card col-6 m-5 p-5 mx-auto sm">
-    <h2 class="h2Head">Add a Burger to the Menu</h2>
+    <h2 class="h2Head">Add Your Own Burg to the Menu</h2>
 
     <form class="create-form">
 
         <div class="form-group">
             <label for="burger">Burger Name:</label>
-            <input type="text" id="burger" name="name">
+            <input type="text" id="burgs" name="name">
         </div>
 
         <div class="form-group">
             <label for="devoured">Have you devoured this burger?</label><br>
-            <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+            <input type="radio" name="devoured" value="1" checked> NOM NOM!<br>
             <input type="radio" name="devoured" value="0"> Not yet!
         </div>
 
-        <button type="submit">Add Burger</button>
+        <button type="submit">Add Dat Burger</button>
     </form>
 </div>
