@@ -6,7 +6,7 @@ $(function(){
         if (newDevour === 1){
             devourValue = 0;
         } else if(newDevour === 0){
-            devourValue = 1
+            devourValue = 1;
         }
         let newDevourChange = {
             devoured: devourValue
@@ -37,19 +37,6 @@ $(function(){
         }).then(
             function() {
                 console.log("added new burger");
-                location.reload();
-            }
-        );
-    });
-
-    $(".delete-burger").on("click", function(event){
-        let id = $(this).data('id');
-
-        $.ajax("/api/burgers/" + id, {
-            type: "DELETE"
-        }).then(
-            function(){
-                console.log("deleted burger", id);
                 location.reload();
             }
         );
