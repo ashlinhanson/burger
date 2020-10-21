@@ -1,14 +1,20 @@
 .jumbotron {
     font-family: "Jua";
     font-size: 64;
+    border-bottom: solid 5px #450101;
 }
 
 ul, li {
     font-family: "Do Hyeon";
 }
 
-button {
-    font-family: "Do Hyeon"
+#burgBtn {
+    font-family: "Do Hyeon";
+    background-color: #450101;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    float: right;
 }
 
 form {
@@ -17,4 +23,19 @@ form {
 
 .h2Head {
     font-family: "Jua";
+    font-size: 36px;
+}
+
+body {
+    background-color: #e5cb7a !important;
+}
+
+#cards {
+    background-color: #32c704;
+    border-radius: 10px;
+    border: solid 5px #450101;
+}
+
+li, label {
+    font-size: 24px;
 }

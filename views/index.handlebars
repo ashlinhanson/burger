@@ -1,19 +1,19 @@
-<div class="jumbotron jumbotron-fluid" style="background-color: #39A386">
+<div class="jumbotron" style="background-color: #ec3521 ">
     <div class="container">
-        <h1 class="display-4 text-center">Time to Eat Dat Burger</h1>
+        <h1 class="display-4 text-center">Eat Dat Burger</h1>
         <img src="/assets/img/burger.png" alt="burgerIcon" class="mx-auto d-block">
     </div>
 </div>
-<div class="container col-12 sm">
+<div class="container col-12 sm" id="body">
     <div class="row">
-        <div class="card col-5 m-5 p-5 sm">
+        <div class="card col m-5 p-5 sm" id="cards">
     <h2 class="h2Head">Da Burgs</h2>
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
                     {{burger_name}}
-                    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}" id="burgBtn">
                         NOM NOM!
                     </button>
                 </li>
@@ -21,7 +21,7 @@
                 {{/each}}
             </ul>
             </div>
-            <div class="card col-5 m-5 p-5 sm">
+            <div class="card col m-5 p-5 sm" id="cards">
                 <h2 class="h2Head">Burgs You've Devoured</h2>
 
                 <ul>
@@ -29,7 +29,7 @@
                     {{#if devoured}}
                     <li>
                         {{burger_name}}
-                        <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                        <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}" id="burgBtn">
                             UNDEVOUR ME!
                         </button>
                     </li>
@@ -40,7 +40,7 @@
 
         </div>
     </div>
-<div class="card col-6 m-5 p-5 mx-auto sm">
+<div class="card col-6 m-5 p-5 mx-auto sm" id="cards">
     <h2 class="h2Head">Add Your Own Burg to the Menu</h2>
 
     <form class="create-form">
@@ -56,6 +56,6 @@
             <input type="radio" name="devoured" value="0"> Not yet!
         </div>
 
-        <button type="submit">Add Dat Burger</button>
+        <button type="submit" id="burgBtn">Add Dat Burger</button>
     </form>
 </div>
