@@ -1,7 +1,7 @@
 # Eat Dat Burger 
  This web application allows you to toggle between eating a burger and "uneating" a burger. You can also add a custom burger for you to devour as well. 
 # Deployed Heroku Link
-[![Deployed Link](https://secure-mountain-07591.herokuapp.com/)
+![Heroku WebPage](https://secure-mountain-07591.herokuapp.com/)
  ## Table of Contents 
  * [Instructions for Use](#Instructions-for-Use) 
  * [Questions](#Questions) 
