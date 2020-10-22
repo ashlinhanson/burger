@@ -9,13 +9,13 @@
   
  ## Instructions for Use 
  Navigate to the deployed web application 
- ![The Home Page](assets/img/1.png?raw=true)
+ ![The Home Page](public/assets/img/1.png?raw=true)
  and choose a burger or multiple burgers to "devour". 
- ![Devoured Example](assets/img/2.png?raw=true)
+ ![Devoured Example](public/assets/img/2.png?raw=true)
  Don't like any of the listed burgers?
- ![Custom Example](assets/img/3.png?raw=true)
+ ![Custom Example](public/assets/img/3.png?raw=true)
  Add your own custom burger at the bottom of the page.
- ![The End](assets/img/4.png?raw=true)
+ ![The End](public/assets/img/4.png?raw=true)
   
  ## Questions  
  Feel free to reach out via : 
